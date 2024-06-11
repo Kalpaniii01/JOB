@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Vacancy Platform</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Job Vacancy Platform</h1>
+
+        <!-- Job Posting Section -->
+        <div class="card mt-3">
+            <div class="card-header">
+                <h2>Post a Job</h2>
+            </div>
+            <div class="card-body">
+                <form id="job-post-form">
+                    <div class="form-group">
+                        <label for="jobTitle">Job Title</label>
+                        <input type="text" class="form-control" id="jobTitle" placeholder="Enter job title">
+                    </div>
+                    <div class="form-group">
+                        <label for="jobDescription">Job Description</label>
+                        <textarea class="form-control" id="jobDescription" rows="4" placeholder="Enter job description"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="jobRequirements">Job Requirements</label>
+                        <textarea class="form-control" id="jobRequirements" rows="4" placeholder="Enter job requirements"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Post Job</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Job Application Section -->
+        <div class="card mt-5">
+            <div class="card-header">
+                <h2>Apply for a Job</h2>
+            </div>
+            <div class="card-body">
+                <form id="job-application-form">
+                    <div class="form-group">
+                        <label for="applicantName">Name</label>
+                        <input type="text" class="form-control" id="applicantName" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="applicantEmail">Email</label>
+                        <input type="email" class="form-control" id="applicantEmail" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="jobTitleApplied">Job Title</label>
+                        <input type="text" class="form-control" id="jobTitleApplied" placeholder="Enter job title you are applying for">
+                    </div>
+                    <div class="form-group">
+                        <label for="coverLetter">Cover Letter</label>
+                        <textarea class="form-control" id="coverLetter" rows="4" placeholder="Enter your cover letter"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
